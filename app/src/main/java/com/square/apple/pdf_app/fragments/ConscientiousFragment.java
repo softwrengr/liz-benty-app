@@ -22,12 +22,14 @@ import android.widget.Toast;
 
 import com.github.barteksc.pdfviewer.PDFView;
 import com.github.barteksc.pdfviewer.listener.OnLoadCompleteListener;
+
 import com.square.apple.pdf_app.R;
 import com.square.apple.pdf_app.dataModels.GetAllResponse;
 import com.square.apple.pdf_app.networking.ApiClient;
 import com.square.apple.pdf_app.networking.ApiInterface;
 import com.square.apple.pdf_app.utils.AlertUtils;
 import com.square.apple.pdf_app.utils.Connectivity;
+
 
 import java.io.IOException;
 import java.io.InputStream;

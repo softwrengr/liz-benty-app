@@ -15,8 +15,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-import com.square.apple.pdf_app.R;
 import com.square.apple.pdf_app.utils.AlertUtils;
+import com.square.apple.pdf_app.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

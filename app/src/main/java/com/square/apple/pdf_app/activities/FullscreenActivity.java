@@ -9,8 +9,8 @@ import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.square.apple.pdf_app.R;
 import com.square.apple.pdf_app.fragments.HomeFragment;
+import com.square.apple.pdf_app.R;
 
 public class FullscreenActivity extends AppCompatActivity {
 

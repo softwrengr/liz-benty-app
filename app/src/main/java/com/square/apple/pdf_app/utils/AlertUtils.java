@@ -12,7 +12,6 @@ import android.widget.TextView;
 
 import com.square.apple.pdf_app.R;
 
-
 /**
  * Created by eapple on 14/08/2018.
  */
