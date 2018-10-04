@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10sp">
+
+
+    <ImageView
+        android:id="@+id/ivHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/ivHome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20sp"
+        android:textColor="#fff"/>
+</RelativeLayout>
