@@ -164,6 +164,7 @@ public class InfluncerFragment extends Fragment {
                         alertDialog.dismiss();
                     }
                 }).load();
+                zoomPdf();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -205,6 +206,8 @@ public class InfluncerFragment extends Fragment {
             window.setStatusBarColor(getResources().getColor(R.color.influncer));
         }
     }
-
+    private void zoomPdf(){
+        pdfView.zoomTo(3);
+    }
 
 }

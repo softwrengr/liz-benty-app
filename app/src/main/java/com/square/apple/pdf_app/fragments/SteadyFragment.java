@@ -161,6 +161,7 @@ public class SteadyFragment extends Fragment {
                         alertDialog.dismiss();
                     }
                 }).load();
+                zoomPdf();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -199,6 +200,9 @@ public class SteadyFragment extends Fragment {
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.setStatusBarColor(getResources().getColor(R.color.steady));
         }
+    }
+    private void zoomPdf(){
+        pdfView.zoomTo(3);
     }
 
 }

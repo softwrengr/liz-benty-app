@@ -168,6 +168,7 @@ public class DominantFragment extends Fragment {
                         alertDialog.dismiss();
                     }
                 }).load();
+                zoomPdf();
 
 
             } catch (IOException e) {
@@ -208,6 +209,10 @@ public class DominantFragment extends Fragment {
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.setStatusBarColor(getResources().getColor(R.color.dominant));
         }
+    }
+
+    private void zoomPdf(){
+        pdfView.zoomTo(3);
     }
 
 

@@ -164,6 +164,7 @@ public class ConscientiousFragment extends Fragment {
                         alertDialog.dismiss();
                     }
                 }).load();
+                zoomPdf();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -201,6 +202,10 @@ public class ConscientiousFragment extends Fragment {
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.setStatusBarColor(getResources().getColor(R.color.conscientious));
         }
+    }
+
+    private void zoomPdf(){
+        pdfView.zoomTo(3);
     }
 
 }
