@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.square.apple.pdf_app.fragments.ContactUsFragment">
+
+
+    <TextView
+        android:id="@+id/tv_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:text="info@lizbentley.com"
+        android:gravity="center"
+        android:layout_marginTop="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:text="631-367-3130"
+        android:gravity="center"
+        android:layout_marginTop="20sp"/>
+
+    <Button
+        android:id="@+id/btn_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/influncer"
+        android:text="Schedule a Consuitation"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:gravity="center"
+        android:layout_marginTop="20sp"/>
+
+</LinearLayout>

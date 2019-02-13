@@ -6,23 +6,15 @@
     android:padding="10sp">
 
 
-    <ImageView
-        android:id="@+id/ivHome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/home"
-        />
-
     <TextView
         android:id="@+id/title"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Title"
-        android:textSize="24sp"
-        android:textStyle="normal"
+        android:textSize="18sp"
+        android:textStyle="bold"
         android:layout_centerVertical="true"
-        android:layout_toRightOf="@id/ivHome"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="20sp"
-        android:textColor="#fff"/>
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_marginRight="80sp"/>
 </RelativeLayout>

@@ -2,11 +2,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.square.apple.pdf_app.fragments.WebviewFragment">
 
     <WebView
         android:id="@+id/webView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></WebView>
+
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_loading"
+        style="@style/AVLoadingIndicatorView"
+        app:indicatorColor="@color/av_loading_color"
+        app:indicatorName="BallClipRotateMultipleIndicator"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:visibility="visible"
+        android:layout_marginBottom="60sp"
+        android:layout_gravity="center"/>
 
 </FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ld_activityScreenTitles">
+        <item>Home</item>
+        <item>About Us</item>
+        <item>Our Coaches</item>
+        <item>Blogs</item>
+        <item>Podcasts</item>
+        <item >Videos</item>
+        <item>Additional Resources</item>
+        <item>Contact Us</item>
+    </string-array>
+
+
+</resources>

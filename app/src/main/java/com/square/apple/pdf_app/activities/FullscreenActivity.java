@@ -2,6 +2,7 @@ package com.square.apple.pdf_app.activities;
 
 import android.annotation.SuppressLint;
 import android.app.Fragment;
+import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,9 +19,13 @@ public class FullscreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fullscreen);
-
-        Fragment fragment = new HomeFragment();
-        getFragmentManager().beginTransaction().replace(R.id.fragment_container,fragment).commit();
-
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                finish();
+                startActivity(new Intent(FullscreenActivity.this,MainDrawerActivity.class));
+            }
+        },2000);
     }
 }

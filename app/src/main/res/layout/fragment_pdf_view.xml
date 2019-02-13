@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.square.apple.pdf_app.fragments.PdfViewFragment">
+
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdf_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/tvLink"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:background="@color/white"
+        android:layout_marginBottom="20sp" />
+
+    <TextView
+        android:id="@+id/tvLink"
+        android:layout_width="wrap_content"
+        android:layout_height="25sp"
+        android:layout_above="@id/layoutSteady"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:text="Learn more at:"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_orginal_link"
+        android:layout_width="wrap_content"
+        android:layout_height="25sp"
+        android:layout_above="@id/layoutSteady"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_toRightOf="@id/tvLink"
+        android:text="http://www.lizbentley.com/"
+        android:textColor="@color/steady"
+        android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:id="@+id/layoutSteady"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_dominant"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#222211"
+            android:text="(D)\nDominant"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+
+        <Button
+            android:id="@+id/btn_influncer"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00004d"
+            android:text="(I)\nInfluncer"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+
+        <Button
+            android:id="@+id/btn_steady"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#008fb3"
+            android:text="(S)\nSteady"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/btn_conscientious"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#006699"
+            android:text="(C)\nConscientious"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+
+    </LinearLayout>
+
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_loading"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="60sp"
+        android:visibility="visible"
+        app:indicatorColor="@color/av_loading_color"
+        app:indicatorName="BallClipRotateMultipleIndicator" />
+
+</RelativeLayout>

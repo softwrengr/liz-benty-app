@@ -4,9 +4,14 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="black_overlay">#66000000</color>
+    <color name="black_overlay">#000000</color>
     <color name="dominant">#222211</color>
     <color name="influncer">#00004d</color>
     <color name="steady">#008fb3</color>
     <color name="conscientious">#006699</color>
+
+    <color name="white">#ffffff</color>
+    <color name="coaches_heading_color">#000000</color>
+    <color name="light_gray">#EBE7E6E2</color>
+    <color name="av_loading_color">#D3CFCF</color>
 </resources>
