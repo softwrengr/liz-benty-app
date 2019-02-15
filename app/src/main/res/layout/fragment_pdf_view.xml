@@ -103,7 +103,6 @@
         android:layout_width="60sp"
         android:layout_height="60sp"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="60sp"
         android:visibility="visible"
         app:indicatorColor="@color/av_loading_color"
         app:indicatorName="BallClipRotateMultipleIndicator" />

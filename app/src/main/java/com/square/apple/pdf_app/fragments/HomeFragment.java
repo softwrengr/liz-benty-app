@@ -67,16 +67,16 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
         switch (view.getId()) {
             case R.id.btn_dominant:
-                gotoPdf("(D) Dominant", "dominant.pdf");
+                gotoPdf("(D) Dominant", "dominant");
                 break;
             case R.id.btn_influncer:
-                gotoPdf("(I) Infuencer", "influencer.pdf");
+                gotoPdf("(I) Infuencer", "Influencer");
                 break;
             case R.id.btn_steady:
-                gotoPdf("(S) Steady", "steady.pdf");
+                gotoPdf("(S) Steady", "steady");
                 break;
             case R.id.btn_conscientious:
-                gotoPdf("(C) Concientious", "concientious.pdf");
+                gotoPdf("(C) Conscientious", "conscientious");
                 break;
 
         }

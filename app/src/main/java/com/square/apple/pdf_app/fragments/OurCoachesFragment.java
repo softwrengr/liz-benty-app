@@ -82,53 +82,49 @@ public class OurCoachesFragment extends Fragment implements View.OnClickListener
     public void onClick(View view) {
 
 
-
         switch (view.getId()) {
             case R.id.iv_liz_bentley:
-                gotoWebview("https://www.lizbentley.com/our-team/liz-bentley","Liz Bentley");
+                gotoWebview("https://www.lizbentley.com/our-team/liz-bentley", "Liz Bentley");
                 break;
             case R.id.iv_karmen_dadourian:
-                gotoWebview("https://www.lizbentley.com/our-team/karmen-dadourian","Karmen Dadourian");
+                gotoWebview("https://www.lizbentley.com/our-team/karmen-dadourian", "Karmen Dadourian");
                 break;
 
             case R.id.iv_georgina_miranda:
-                gotoWebview("https://www.lizbentley.com/our-team/georgina-miranda","Georgina Miranda");
+                gotoWebview("https://www.lizbentley.com/our-team/georgina-miranda", "Georgina Miranda");
                 break;
 
             case R.id.iv_deanne_carter:
-                gotoWebview("https://www.lizbentley.com/our-team/deanne-carter","Deanne Carter");
+                gotoWebview("https://www.lizbentley.com/our-team/deanne-carter", "Deanne Carter");
                 break;
 
             case R.id.iv_alissa:
-                gotoWebview("https://www.lizbentley.com/our-team/alissa-finerman","Alissa Finerman");
+                gotoWebview("https://www.lizbentley.com/our-team/alissa-finerman", "Alissa Finerman");
                 break;
 
             case R.id.iv_gina_esposito:
-                gotoWebview("https://www.lizbentley.com/our-team/gina-esposito","Gina Esposito");
+                gotoWebview("https://www.lizbentley.com/our-team/gina-esposito", "Gina Esposito");
                 break;
 
             case R.id.iv_augusta_reese:
-                gotoWebview("https://www.lizbentley.com/our-team/augusta-reese","Augusta Reese");
+                gotoWebview("https://www.lizbentley.com/our-team/augusta-reese", "Augusta Reese");
                 break;
 
             case R.id.iv_laura:
-                gotoWebview("https://www.lizbentley.com/our-team/laura-caban","Laura Caban");
+                gotoWebview("https://www.lizbentley.com/our-team/laura-caban", "Laura Caban");
                 break;
 
             case R.id.iv_kerith_mcelroy:
-                gotoWebview("https://www.lizbentley.com/our-team/kerith-mcelroy","Kerith McElroy");
+                gotoWebview("https://www.lizbentley.com/our-team/kerith-mcelroy", "Kerith McElroy");
                 break;
 
         }
     }
 
-    private void gotoWebview(String strUrl,String strTitle) {
-        Utilities.putValueInEditor(getActivity()).putString("title",strTitle).commit();
+    private void gotoWebview(String strUrl, String strTitle) {
+        Utilities.putValueInEditor(getActivity()).putString("title", strTitle).commit();
         Utilities.putValueInEditor(getActivity()).putString("url", strUrl).commit();
         Utilities.connectFragment(getActivity(), new WebviewFragment());
-
-        ///test
-
     }
 
     public void customActionBar() {

@@ -28,7 +28,8 @@ public class ContactUsFragment extends Fragment {
     View parentView;
     @BindView(R.id.btn_schedule)
     Button btnSchedule;
-    @BindView(R.id.tv_link)TextView tvLink;
+    @BindView(R.id.tv_link)
+    TextView tvLink;
 
     public static ContactUsFragment createFor(String text) {
         ContactUsFragment fragment = new ContactUsFragment();
@@ -37,11 +38,12 @@ public class ContactUsFragment extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         parentView = inflater.inflate(R.layout.fragment_contact_us, container, false);
-        ButterKnife.bind(this,parentView);
+        ButterKnife.bind(this, parentView);
         customActionBar();
 
         btnSchedule.setOnClickListener(new View.OnClickListener() {
@@ -49,7 +51,7 @@ public class ContactUsFragment extends Fragment {
             public void onClick(View view) {
                 Utilities.putValueInEditor(getActivity()).putString("title", "Schedule").commit();
                 Utilities.putValueInEditor(getActivity()).putString("url", "http://www.lizbentley.com/disc-app").commit();
-                Utilities.withOutBackStackConnectFragment(getActivity(),new WebviewFragment());
+                Utilities.withOutBackStackConnectFragment(getActivity(), new WebviewFragment());
 
             }
         });
@@ -62,8 +64,6 @@ public class ContactUsFragment extends Fragment {
                 Utilities.withOutBackStackConnectFragment(getActivity(), new WebviewFragment());
             }
         });
-
-
 
 
         return parentView;

@@ -19,6 +19,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.TextView;
+
 import com.square.apple.pdf_app.R;
 import com.square.apple.pdf_app.utils.Utilities;
 import com.wang.avi.AVLoadingIndicatorView;
@@ -111,7 +112,7 @@ public class WebviewFragment extends Fragment {
         LayoutInflater mInflater = LayoutInflater.from(getActivity());
         View mCustomView = mInflater.inflate(R.layout.custom_actionbar, null);
         TextView tvTitle = mCustomView.findViewById(R.id.title);
-        tvTitle.setText(Utilities.getSharedPreferences(getActivity()).getString("title",""));
+        tvTitle.setText(Utilities.getSharedPreferences(getActivity()).getString("title", ""));
         mActionBar.setCustomView(mCustomView);
         mActionBar.setDisplayShowCustomEnabled(true);
         mActionBar.show();
