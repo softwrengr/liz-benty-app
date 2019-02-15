@@ -126,6 +126,9 @@ public class OurCoachesFragment extends Fragment implements View.OnClickListener
         Utilities.putValueInEditor(getActivity()).putString("title",strTitle).commit();
         Utilities.putValueInEditor(getActivity()).putString("url", strUrl).commit();
         Utilities.connectFragment(getActivity(), new WebviewFragment());
+
+        ///test
+
     }
 
     public void customActionBar() {
