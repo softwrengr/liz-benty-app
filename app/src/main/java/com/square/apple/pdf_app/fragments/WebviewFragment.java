@@ -63,10 +63,9 @@ public class WebviewFragment extends Fragment {
         webView.getSettings().setBuiltInZoomControls(true);
         webView.getSettings().setPluginState(WebSettings.PluginState.ON);
         webView.setWebViewClient(new HelloWebViewClient());
-        if (alertDialog == null) {
 
-            avLoadingIndicatorView.setVisibility(View.VISIBLE);
-        }
+        avLoadingIndicatorView.setVisibility(View.VISIBLE);
+
         webView.loadUrl(url);
         return view;
 
@@ -75,9 +74,9 @@ public class WebviewFragment extends Fragment {
     private class HelloWebViewClient extends WebViewClient {
         @Override
         public void onPageStarted(WebView view, String url, Bitmap favicon) {
-            if (alertDialog == null) {
-                avLoadingIndicatorView.setVisibility(View.VISIBLE);
-            }
+
+            avLoadingIndicatorView.setVisibility(View.VISIBLE);
+
             super.onPageStarted(view, url, favicon);
         }
 
@@ -89,9 +88,9 @@ public class WebviewFragment extends Fragment {
 
         @Override
         public void onPageFinished(WebView view, String url) {
-            if (alertDialog != null) {
-                avLoadingIndicatorView.setVisibility(View.GONE);
-            }
+
+            avLoadingIndicatorView.setVisibility(View.GONE);
+
             super.onPageFinished(view, url);
         }
 
