@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.github.barteksc.pdfviewer.PDFView;
 import com.github.barteksc.pdfviewer.listener.OnLoadCompleteListener;
 import com.square.apple.pdf_app.R;
@@ -22,9 +23,11 @@ import com.square.apple.pdf_app.networking.ApiInterface;
 import com.square.apple.pdf_app.utils.Connectivity;
 import com.square.apple.pdf_app.utils.Utilities;
 import com.wang.avi.AVLoadingIndicatorView;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import retrofit2.Call;
@@ -59,9 +62,37 @@ public class PdfViewFragment extends Fragment implements View.OnClickListener {
         customActionBar();
         pdfView = parentView.findViewById(R.id.pdf_view);
         initUI();
-        loadPdfFile();
+//        loadPdfFile();
 
+        LoadPdfFromAsset();
         return parentView;
+    }
+
+    private void LoadPdfFromAsset() {
+        pdfView.fromAsset(Utilities.getSharedPreferences(getActivity()).getString("pdf_file_name", "")).onLoad(new OnLoadCompleteListener() {
+            @Override
+            public void loadComplete(int nbPages) {
+                avLoadingIndicatorView.setVisibility(View.GONE);
+            }
+        }).enableSwipe(true) // allows to block changing pages using swipe
+                .enableAnnotationRendering(true) // render annotations (such as comments, colors or forms)
+                .password(null)
+                .enableDoubletap(false)
+                .enableAntialiasing(false) // improve rendering a little bit on low-res screens
+                .onLoad(new OnLoadCompleteListener() {
+                    @Override
+                    public void loadComplete(int nbPages) {
+                        avLoadingIndicatorView.setVisibility(View.GONE);
+                    }
+                })
+                .enableAntialiasing(false)
+                .load();
+
+        pdfView.zoomTo(3);
+        pdfView.setMinZoom(3);
+        pdfView.setMaxZoom(3);
+        pdfView.enableRenderDuringScale(true);
+
     }
 
 
@@ -82,18 +113,18 @@ public class PdfViewFragment extends Fragment implements View.OnClickListener {
         switch (view.getId()) {
             case R.id.btn_dominant:
                 gotoPdf("(D) Dominant");
-                Utilities.putValueInEditor(getActivity()).putString("pdf_file_name", "dominant").commit();
+                Utilities.putValueInEditor(getActivity()).putString("pdf_file_name", "dominant.pdf").commit();
                 break;
             case R.id.btn_influncer:
                 gotoPdf("(I) Infuencer");
-                Utilities.putValueInEditor(getActivity()).putString("pdf_file_name", "Influencer").commit();
+                Utilities.putValueInEditor(getActivity()).putString("pdf_file_name", "influencer.pdf").commit();
                 break;
             case R.id.btn_steady:
-                Utilities.putValueInEditor(getActivity()).putString("pdf_file_name", "steady").commit();
+                Utilities.putValueInEditor(getActivity()).putString("pdf_file_name", "steady.pdf").commit();
                 gotoPdf("(S) Steady");
                 break;
             case R.id.btn_conscientious:
-                Utilities.putValueInEditor(getActivity()).putString("pdf_file_name", "conscientious").commit();
+                Utilities.putValueInEditor(getActivity()).putString("pdf_file_name", "concientious.pdf").commit();
                 gotoPdf("(C) Concientious");
                 break;
             case R.id.tv_orginal_link:
@@ -103,7 +134,9 @@ public class PdfViewFragment extends Fragment implements View.OnClickListener {
                 break;
         }
 
-        loadPdfFile();
+        customActionBar();
+
+//        loadPdfFile();
 
     }
 
@@ -118,7 +151,8 @@ public class PdfViewFragment extends Fragment implements View.OnClickListener {
 
     private void gotoPdf(String strTitle) {
         Utilities.putValueInEditor(getActivity()).putString("title", strTitle).commit();
-//        Utilities.withOutBackStackConnectFragment(getActivity(), new PdfViewFragment());
+//        LoadPdfFromAsset();
+        Utilities.withOutBackStackConnectFragment(getActivity(), new PdfViewFragment());
 
     }
 
