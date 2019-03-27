@@ -46,7 +46,7 @@ public class MainDrawerActivity extends AppCompatActivity implements DrawerAdapt
     private static final int BLOGS = 3;
     private static final int PODCASTS = 4;
     private static final int VIDEOS = 5;
-    private static final int ADDITIONAL_RESOURCES = 6;
+    private static final int TAKETHEDISC = 6;
     private static final int CONTACT_US = 7;
     private String[] screenTitles;
 
@@ -95,7 +95,7 @@ public class MainDrawerActivity extends AppCompatActivity implements DrawerAdapt
                 createItemFor(BLOGS),
                 createItemFor(PODCASTS),
                 createItemFor(VIDEOS),
-                createItemFor(ADDITIONAL_RESOURCES),
+                createItemFor(TAKETHEDISC),
                 createItemFor(CONTACT_US)));
         ;
         adapter.setListener((DrawerAdapter.OnItemSelectedListener) this);
@@ -163,13 +163,13 @@ public class MainDrawerActivity extends AppCompatActivity implements DrawerAdapt
 
 
             Utilities.putValueInEditor(this).putString("title", "Videos").commit();
-            Utilities.putValueInEditor(this).putString("url", "https://vimeo.com/lizbentleyassociates").commit();
+            Utilities.putValueInEditor(this).putString("url", "https://www.youtube.com/channel/UC8uNWtuSXrbdyovyoAuPQmw").commit();
             Fragment selectedScreen = WebviewFragment.createFor(screenTitles[position]);
             showFragment(selectedScreen);
 
-        } else if (position == ADDITIONAL_RESOURCES) {
+        } else if (position == TAKETHEDISC) {
 
-            Utilities.putValueInEditor(this).putString("title", "Additional Resources").commit();
+            Utilities.putValueInEditor(this).putString("title", "Take the DISC").commit();
             Utilities.putValueInEditor(this).putString("url", "http://www.lizbentley.com/disc-app").commit();
             Fragment selectedScreen = WebviewFragment.createFor(screenTitles[position]);
             showFragment(selectedScreen);

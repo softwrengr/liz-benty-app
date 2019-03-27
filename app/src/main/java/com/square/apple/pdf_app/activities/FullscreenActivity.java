@@ -7,11 +7,14 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
 import com.square.apple.pdf_app.fragments.HomeFragment;
 import com.square.apple.pdf_app.R;
+
+import java.net.InetAddress;
 
 public class FullscreenActivity extends AppCompatActivity {
 
@@ -28,4 +31,6 @@ public class FullscreenActivity extends AppCompatActivity {
             }
         },2000);
     }
+
+
 }

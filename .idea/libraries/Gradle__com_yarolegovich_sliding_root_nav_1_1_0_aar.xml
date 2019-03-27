@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.yarolegovich:sliding-root-nav:1.1.0@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sliding-root-nav-1.1.0.aar/cce644ebda110b54a5be5303e54f5f50/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sliding-root-nav-1.1.0.aar/cce644ebda110b54a5be5303e54f5f50/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sliding-root-nav-1.1.0.aar/58d71409de1bca9ed52cbb35f0356a0e/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sliding-root-nav-1.1.0.aar/58d71409de1bca9ed52cbb35f0356a0e/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
