@@ -44,8 +44,9 @@
 
         <Button
             android:id="@+id/btn_dominant"
-            android:layout_width="wrap_content"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:textAllCaps="false"
             android:background="#222211"
             android:textColor="#fff"
@@ -55,8 +56,9 @@
 
         <Button
             android:id="@+id/btn_influncer"
-            android:layout_width="wrap_content"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:textAllCaps="false"
             android:background="#00004d"
             android:textColor="#fff"
@@ -66,8 +68,9 @@
 
         <Button
             android:id="@+id/btn_steady"
-            android:layout_width="wrap_content"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
+            android:layout_weight="0.9"
             android:textAllCaps="false"
             android:background="#008fb3"
             android:textColor="#fff"
@@ -76,8 +79,9 @@
 
         <Button
             android:id="@+id/btn_conscientious"
-            android:layout_width="match_parent"
+            android:layout_width="0sp"
             android:layout_height="match_parent"
+            android:layout_weight="1.2"
             android:textAllCaps="false"
             android:background="#006699"
             android:textColor="#fff"
