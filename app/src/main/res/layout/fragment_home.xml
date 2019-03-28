@@ -8,12 +8,31 @@
 
 
     <ImageView
+        android:id="@+id/iv_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
         android:src="@drawable/group"/>
 
+
+    <TextView
+        android:layout_below="@+id/iv_logo"
+        android:id="@+id/tv_understand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:text="Understand different personalities\nand learn how to work\nwiht them more  effectively."/>
+
+
+    <TextView
+        android:layout_below="@+id/tv_understand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20sp"
+        android:text="Get started by clicking a tab below"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60sp"
@@ -62,8 +81,7 @@
             android:textAllCaps="false"
             android:background="#006699"
             android:textColor="#fff"
-            android:text="(C)\nConscientious"
-            />
+            android:text="(C)\nConscientious"/>
 
 
     </LinearLayout>

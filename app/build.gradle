@@ -30,13 +30,10 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
     implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
 
-    implementation 'com.android.support:appcompat-v7:27.1.1' // appcompat library
-    implementation 'com.android.support:design:27.1.1'
 
     implementation 'de.hdodenhof:circleimageview:3.0.0'
 
 
-    implementation 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
 
     implementation 'com.yarolegovich:sliding-root-nav:1.1.0'
     implementation 'com.wang.avi:library:2.1.3'

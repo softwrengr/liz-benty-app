@@ -170,7 +170,7 @@ public class MainDrawerActivity extends AppCompatActivity implements DrawerAdapt
         } else if (position == TAKETHEDISC) {
 
             Utilities.putValueInEditor(this).putString("title", "Take the DISC").commit();
-            Utilities.putValueInEditor(this).putString("url", "http://www.lizbentley.com/disc-app").commit();
+            Utilities.putValueInEditor(this).putString("url", "https://www.lizbentley.com/disc-assessments").commit();
             Fragment selectedScreen = WebviewFragment.createFor(screenTitles[position]);
             showFragment(selectedScreen);
         } else if (position == CONTACT_US) {
