@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:gravity="center_horizontal"
-        android:text="Understand different personalities\nand learn how to work\nwiht them more  effectively."/>
+        android:text="Understand different personalities\nand learn how to work\nwith them more  effectively."/>
 
 
     <TextView

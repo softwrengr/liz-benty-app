@@ -48,12 +48,7 @@ public class OurCoachesFragment extends Fragment implements View.OnClickListener
     CircleImageView ivAlissa;
     @BindView(R.id.iv_gina_esposito)
     CircleImageView ivGinaEsposito;
-    @BindView(R.id.iv_augusta_reese)
-    CircleImageView ivAugustaReese;
-    @BindView(R.id.iv_laura)
-    CircleImageView ivLaura;
-    @BindView(R.id.iv_kerith_mcelroy)
-    CircleImageView ivKerithMcElroy;
+
 
 
     @Override
@@ -68,10 +63,6 @@ public class OurCoachesFragment extends Fragment implements View.OnClickListener
         ivDeanneCarter.setOnClickListener(this);
         ivAlissa.setOnClickListener(this);
         ivGinaEsposito.setOnClickListener(this);
-        ivAugustaReese.setOnClickListener(this);
-        ivLaura.setOnClickListener(this);
-        ivKerithMcElroy.setOnClickListener(this);
-
         customActionBar();
 
 
@@ -106,17 +97,6 @@ public class OurCoachesFragment extends Fragment implements View.OnClickListener
                 gotoWebview("https://www.lizbentley.com/our-team/gina-esposito", "Gina Esposito");
                 break;
 
-            case R.id.iv_augusta_reese:
-                gotoWebview("https://www.lizbentley.com/our-team/augusta-reese", "Augusta Reese");
-                break;
-
-            case R.id.iv_laura:
-                gotoWebview("https://www.lizbentley.com/our-team/laura-caban", "Laura Caban");
-                break;
-
-            case R.id.iv_kerith_mcelroy:
-                gotoWebview("https://www.lizbentley.com/our-team/kerith-mcelroy", "Kerith McElroy");
-                break;
 
         }
     }
